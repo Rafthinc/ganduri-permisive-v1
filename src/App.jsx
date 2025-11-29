@@ -151,30 +151,51 @@ function App() {
 
             {/* 🔹 descriere permanentă aplicație */}
             <section className="about-section glass-card">
-              <h2>Bine ai venit!</h2>
+              <h2>Bine ai venit în Jocul de nutriție CBT</h2>
 
               <p>
-                Acest joc te ajută să recunoști{" "}
-                <strong>gândurile permisive</strong> – acele justificări care
-                apar înainte de mâncatul impulsiv: „merit ceva bun”, „e doar
-                una”, „am avut o zi grea”.
+                În acest joc vei lucra cu <strong>gânduri permisive</strong> –
+                acele justificări rapide care apar înainte de mâncatul impulsiv:
+                „merit ceva bun”, „e doar una”, „am avut o zi grea”, „viața e
+                scurtă”.
               </p>
 
               <p>
-                Opțiunile <strong style={{ color: "#ef4444" }}>roșii</strong>{" "}
-                întăresc gândul permisiv și duc la alegeri nesănătoase.
+                Rolul tău este să alegi dacă îi oferi clientului alimentul
+                <strong>nesănătos</strong> pe care îl cere (opțiune marcată cu{" "}
+                <span style={{ color: "#ef4444" }}>roșu</span>, care întărește
+                impulsul) sau o <strong>variantă sănătoasă</strong>
+                (opțiune marcată cu{" "}
+                <span style={{ color: "#22c55e" }}>verde</span>, care îl ajută
+                să-și corecteze gândul permisiv și să-și recapete controlul).
               </p>
 
               <p>
-                Opțiunile <strong style={{ color: "#22c55e" }}>verzi</strong> te
-                învață să răspunzi gândurilor cu un{" "}
-                <strong>raționament sănătos</strong> și o variantă mai bună
-                pentru corpul tău.
+                <span style={{ color: "#ef4444", fontWeight: "bold" }}>
+                  ROȘU
+                </span>{" "}
+                = întărești gândul permisiv. Îi validezi ideea că „are voie”,
+                „nu contează”, „nu e mare lucru”. Pe termen lung, asta duce la
+                pierderea controlului, vinovăție și mâncat emoțional.
               </p>
 
               <p>
-                Pe scurt: înveți cum gândurile îți influențează emoțiile și
-                alegerile, și cum poți schimba acest proces prin CBT.
+                <span style={{ color: "#22c55e", fontWeight: "bold" }}>
+                  VERDE
+                </span>{" "}
+                = îl ajuți să răspundă gândului. Oferești un{" "}
+                <strong>gând rațional</strong> și o alternativă sănătoasă care
+                îl ajută să se simtă bine fizic și psihic, fără să-și saboteze
+                obiectivele.
+              </p>
+
+              <p>
+                Pe scurt: înveți cum{" "}
+                <strong>gândurile influențează alegerile</strong>, cum apare
+                <strong>mâncatul emoțional</strong>, și cum poate fi schimbat
+                prin CBT. Poți folosi acest joc în autoreflecție, în terapie sau
+                în programe educaționale despre relația dintre{" "}
+                <strong>gânduri, emoții și comportamente alimentare</strong>.
               </p>
 
               <p className="intro-author">
@@ -253,51 +274,30 @@ function App() {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.25 }}
             >
-              <h2>Bine ai venit în Jocul de nutriție CBT</h2>
+              <h2>Bine ai venit!</h2>
 
               <p>
-                În acest joc vei lucra cu <strong>gânduri permisive</strong> –
-                acele justificări rapide care apar înainte de mâncatul impulsiv:
-                „merit ceva bun”, „e doar una”, „am avut o zi grea”, „viața e
-                scurtă”.
+                Acest joc te ajută să recunoști{" "}
+                <strong>gândurile permisive</strong> – acele justificări care
+                apar înainte de mâncatul impulsiv: „merit ceva bun”, „e doar
+                una”, „am avut o zi grea”.
               </p>
 
               <p>
-                Rolul tău este să alegi dacă îi oferi clientului alimentul
-                <strong>nesănătos</strong> pe care îl cere (opțiune marcată cu{" "}
-                <span style={{ color: "#ef4444" }}>roșu</span>, care întărește
-                impulsul) sau o <strong>variantă sănătoasă</strong>
-                (opțiune marcată cu{" "}
-                <span style={{ color: "#22c55e" }}>verde</span>, care îl ajută
-                să-și corecteze gândul permisiv și să-și recapete controlul).
+                Opțiunile <strong style={{ color: "#ef4444" }}>roșii</strong>{" "}
+                întăresc gândul permisiv și duc la alegeri nesănătoase.
               </p>
 
               <p>
-                <span style={{ color: "#ef4444", fontWeight: "bold" }}>
-                  ROȘU
-                </span>{" "}
-                = întărești gândul permisiv. Îi validezi ideea că „are voie”,
-                „nu contează”, „nu e mare lucru”. Pe termen lung, asta duce la
-                pierderea controlului, vinovăție și mâncat emoțional.
+                Opțiunile <strong style={{ color: "#22c55e" }}>verzi</strong> te
+                învață să răspunzi gândurilor cu un{" "}
+                <strong>raționament sănătos</strong> și o variantă mai bună
+                pentru corpul tău.
               </p>
 
               <p>
-                <span style={{ color: "#22c55e", fontWeight: "bold" }}>
-                  VERDE
-                </span>{" "}
-                = îl ajuți să răspundă gândului. Oferești un{" "}
-                <strong>gând rațional</strong> și o alternativă sănătoasă care
-                îl ajută să se simtă bine fizic și psihic, fără să-și saboteze
-                obiectivele.
-              </p>
-
-              <p>
-                Pe scurt: înveți cum{" "}
-                <strong>gândurile influențează alegerile</strong>, cum apare
-                <strong>mâncatul emoțional</strong>, și cum poate fi schimbat
-                prin CBT. Poți folosi acest joc în autoreflecție, în terapie sau
-                în programe educaționale despre relația dintre{" "}
-                <strong>gânduri, emoții și comportamente alimentare</strong>.
+                Pe scurt: înveți cum gândurile îți influențează emoțiile și
+                alegerile, și cum poți schimba acest proces prin CBT.
               </p>
 
               <p className="intro-author">
