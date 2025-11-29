@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react"; // ⬅️ adăugăm useEffect + useState
+import React, { useEffect, useState, useRef } from "react"; // ⬅️ adăugăm useEffect + useState
 import { motion, AnimatePresence } from "framer-motion";
 import { useGame } from "./GameContext";
 
 function App() {
   const { state, dispatch } = useGame();
   const scenario = state.scenarios[state.activeScenarioIndex];
+
+  // 🔹 referință către zona de feedback
+  const feedbackRef = useRef(null);
 
   // 👉 stare pentru fereastra de început
   const [showIntro, setShowIntro] = useState(false);
@@ -16,6 +19,20 @@ function App() {
       setShowIntro(true);
     }
   }, []);
+
+  // 🔹 când apare un nou feedback (lastChoice), facem scroll la el pe mobile
+  useEffect(() => {
+    if (!state.lastChoice) return;
+
+    if (typeof window !== "undefined" && window.innerWidth <= 900) {
+      if (feedbackRef.current) {
+        feedbackRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  }, [state.lastChoice]);
 
   function handleCloseIntro() {
     localStorage.setItem("cbt-nutrition-intro-seen", "true");
@@ -138,6 +155,7 @@ function App() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 15 }}
                   transition={{ duration: 0.3 }}
+                  ref={feedbackRef}
                 >
                   <h3>
                     {state.lastChoice.isCorrect
