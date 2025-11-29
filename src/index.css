@@ -1,0 +1,450 @@
+:root {
+  --bg-dark: #020617;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --accent-green: #22c55e;
+  --accent-red: #f97373;
+  --accent-blue: #38bdf8;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border-radius-lg: 18px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+/* container general */
+.app-root {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* fundal restaurant */
+.background-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at top,
+      rgba(15, 23, 42, 0.4),
+      transparent 55%
+    ),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95));
+}
+
+/* conținut deasupra fundalului */
+.app-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 16px 32px;
+}
+
+/* header */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+.app-subtitle {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.header-stats {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.stat-pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+}
+
+.stat-pill span {
+  color: var(--text-muted);
+}
+
+.stat-pill strong {
+  font-size: 0.95rem;
+}
+
+/* layout principal */
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* carduri cu efect glass */
+.glass-card {
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
+}
+
+/* secțiunea client */
+.client-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* card client */
+.client-card {
+  padding: 16px;
+}
+
+.client-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.client-avatar-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(248, 250, 252, 0.9);
+}
+
+.client-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.client-emotion {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.client-thought {
+  margin-top: 12px;
+}
+
+.client-thought .label {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-blue);
+}
+
+.thought-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.client-instruction {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.client-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* butoane */
+.btn {
+  border-radius: 999px;
+  padding: 6px 12px;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn.ghost {
+  background-color: rgba(148, 163, 184, 0.18);
+  color: var(--text-main);
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  color: var(--text-main);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* feedback CBT */
+.feedback-card {
+  padding: 12px 14px;
+  border-radius: var(--border-radius-lg);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.feedback-card h3 {
+  margin: 0 0 6px;
+  font-size: 0.96rem;
+}
+
+.feedback-success {
+  background-color: rgba(22, 163, 74, 0.18);
+  border: 1px solid rgba(22, 163, 74, 0.6);
+}
+
+.feedback-error {
+  background-color: rgba(185, 28, 28, 0.18);
+  border: 1px solid rgba(185, 28, 28, 0.6);
+}
+
+/* secțiunea alimente */
+.foods-section {
+  padding: 16px;
+}
+
+.foods-header h2 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.foods-header p {
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* grid alimente */
+.foods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.food-card {
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background-color: rgba(15, 23, 42, 0.95);
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  color: inherit;
+  text-align: left;
+}
+
+.food-card:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+.food-image-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #020617;
+  flex-shrink: 0;
+}
+
+.food-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.food-name {
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+.food-tag {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* accent pentru alegerile relevante scenariului */
+.food-healthy {
+  border-color: rgba(34, 197, 94, 0.7);
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.4);
+}
+
+.food-unhealthy {
+  border-color: rgba(248, 113, 113, 0.85);
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.5);
+}
+
+/* responsive pentru ecrane mai late */
+@media (min-width: 900px) {
+  .layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .client-section {
+    flex: 3;
+  }
+
+  .foods-section {
+    flex: 2;
+  }
+
+  .app-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .foods-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ecrane foarte mici */
+@media (max-width: 400px) {
+  .foods-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 🔹 secțiune permanentă cu descrierea aplicației */
+.about-section {
+  margin-top: 8px;
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.about-title {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+
+.about-text {
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
+.about-author {
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  color: var(--text-main);
+}
+
+/* 🔹 buton primary (pentru modal) */
+.btn.primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #f9fafb;
+  border: none;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+/* 🔹 overlay + modal de început */
+.intro-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(15, 23, 42, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.intro-modal {
+  max-width: 560px;
+  width: 100%;
+  padding: 18px 18px 16px;
+  text-align: left;
+}
+
+.intro-modal h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.intro-modal p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+
+.intro-author {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* mici ajustări pe mobile pentru about + layout */
+@media (max-width: 768px) {
+  .about-section {
+    margin-top: 10px;
+  }
+
+  .intro-modal {
+    max-width: 100%;
+  }
+}
