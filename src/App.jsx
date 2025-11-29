@@ -162,7 +162,7 @@ function App() {
 
               <p>
                 Rolul tău este să alegi dacă îi oferi clientului alimentul
-                <strong>nesănătos</strong> pe care îl cere (opțiune marcată cu{" "}
+                <strong> nesănătos</strong> pe care îl cere (opțiune marcată cu{" "}
                 <span style={{ color: "#ef4444" }}>roșu</span>, care întărește
                 impulsul) sau o <strong>variantă sănătoasă</strong>
                 (opțiune marcată cu{" "}
@@ -183,7 +183,7 @@ function App() {
                 <span style={{ color: "#22c55e", fontWeight: "bold" }}>
                   VERDE
                 </span>{" "}
-                = îl ajuți să răspundă gândului. Oferești un{" "}
+                = îl ajuți să răspundă gândului. Oferi un{" "}
                 <strong>gând rațional</strong> și o alternativă sănătoasă care
                 îl ajută să se simtă bine fizic și psihic, fără să-și saboteze
                 obiectivele.
@@ -192,9 +192,9 @@ function App() {
               <p>
                 Pe scurt: înveți cum{" "}
                 <strong>gândurile influențează alegerile</strong>, cum apare
-                <strong>mâncatul emoțional</strong>, și cum poate fi schimbat
-                prin CBT. Poți folosi acest joc în autoreflecție, în terapie sau
-                în programe educaționale despre relația dintre{" "}
+                <strong> mâncatul emoțional</strong>, și cum poate fi schimbat
+                prin CBT. Poți folosi acest joc în auto-reflecție, în terapie
+                sau în programe educaționale despre relația dintre{" "}
                 <strong>gânduri, emoții și comportamente alimentare</strong>.
               </p>
 
