@@ -150,36 +150,38 @@ function App() {
             </AnimatePresence>
 
             {/* 🔹 descriere permanentă aplicație */}
-            <h2>Bine ai venit!</h2>
+            <section className="about-section glass-card">
+              <h2>Bine ai venit!</h2>
 
-            <p>
-              Acest joc te ajută să recunoști{" "}
-              <strong>gândurile permisive</strong> – acele justificări care apar
-              înainte de mâncatul impulsiv: „merit ceva bun”, „e doar una”, „am
-              avut o zi grea”.
-            </p>
+              <p>
+                Acest joc te ajută să recunoști{" "}
+                <strong>gândurile permisive</strong> – acele justificări care
+                apar înainte de mâncatul impulsiv: „merit ceva bun”, „e doar
+                una”, „am avut o zi grea”.
+              </p>
 
-            <p>
-              Opțiunile <strong style={{ color: "#ef4444" }}>roșii</strong>{" "}
-              întăresc gândul permisiv și duc la alegeri nesănătoase.
-            </p>
+              <p>
+                Opțiunile <strong style={{ color: "#ef4444" }}>roșii</strong>{" "}
+                întăresc gândul permisiv și duc la alegeri nesănătoase.
+              </p>
 
-            <p>
-              Opțiunile <strong style={{ color: "#22c55e" }}>verzi</strong> te
-              învață să răspunzi gândurilor cu un{" "}
-              <strong>raționament sănătos</strong> și o variantă mai bună pentru
-              corpul tău.
-            </p>
+              <p>
+                Opțiunile <strong style={{ color: "#22c55e" }}>verzi</strong> te
+                învață să răspunzi gândurilor cu un{" "}
+                <strong>raționament sănătos</strong> și o variantă mai bună
+                pentru corpul tău.
+              </p>
 
-            <p>
-              Pe scurt: înveți cum gândurile îți influențează emoțiile și
-              alegerile, și cum poți schimba acest proces prin CBT.
-            </p>
+              <p>
+                Pe scurt: înveți cum gândurile îți influențează emoțiile și
+                alegerile, și cum poți schimba acest proces prin CBT.
+              </p>
 
-            <p className="intro-author">
-              Creat de Roșu Adrian-Francois – Psihoterapeut CBT, Nutriționist &
-              Developer IT.
-            </p>
+              <p className="intro-author">
+                Creat de Roșu Adrian-Francois – Psihoterapeut CBT, Nutriționist
+                & Developer IT.
+              </p>
+            </section>
           </section>
 
           {/* DREAPTA – grid alimente */}
