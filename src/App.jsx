@@ -150,41 +150,36 @@ function App() {
             </AnimatePresence>
 
             {/* 🔹 descriere permanentă aplicație */}
-            <section className="about-section glass-card">
-              <h2 className="about-title">Despre acest joc</h2>
+            <h2>Bine ai venit!</h2>
 
-              <p className="about-text">
-                Acest joc te ajută să recunoști{" "}
-                <strong>gândurile permisive</strong> – acele justificări rapide
-                care apar înainte de mâncatul impulsiv: „merit ceva bun”, „e
-                doar una”, „am avut o zi grea”, „viața e scurtă”.
-              </p>
+            <p>
+              Acest joc te ajută să recunoști{" "}
+              <strong>gândurile permisive</strong> – acele justificări care apar
+              înainte de mâncatul impulsiv: „merit ceva bun”, „e doar una”, „am
+              avut o zi grea”.
+            </p>
 
-              <p className="about-text">
-                Alegerile marcate cu{" "}
-                <strong style={{ color: "#ef4444" }}>roșu</strong> întăresc
-                gândul permisiv și comportamentul nesănătos. Îi confirmă
-                clientului că impulsul lui este valid și „are voie”.
-              </p>
+            <p>
+              Opțiunile <strong style={{ color: "#ef4444" }}>roșii</strong>{" "}
+              întăresc gândul permisiv și duc la alegeri nesănătoase.
+            </p>
 
-              <p className="about-text">
-                Alegerile marcate cu{" "}
-                <strong style={{ color: "#22c55e" }}>verde</strong> îl ajută să
-                răspundă gândului permisiv cu un <strong>gând rațional</strong>{" "}
-                și să aleagă o variantă mai blândă pentru corpul lui.
-              </p>
+            <p>
+              Opțiunile <strong style={{ color: "#22c55e" }}>verzi</strong> te
+              învață să răspunzi gândurilor cu un{" "}
+              <strong>raționament sănătos</strong> și o variantă mai bună pentru
+              corpul tău.
+            </p>
 
-              <p className="about-text">
-                Scopul jocului este să exersezi transformarea gândurilor
-                permisive în alternative sănătoase – o abilitate esențială în
-                <strong> CBT pentru mâncat emoțional</strong>.
-              </p>
+            <p>
+              Pe scurt: înveți cum gândurile îți influențează emoțiile și
+              alegerile, și cum poți schimba acest proces prin CBT.
+            </p>
 
-              <p className="about-author">
-                Creat de <strong>Roșu Adrian-Francois</strong> – Psihoterapeut
-                cognitiv-comportamental, Nutriționist & Developer IT.
-              </p>
-            </section>
+            <p className="intro-author">
+              Creat de Roșu Adrian-Francois – Psihoterapeut CBT, Nutriționist &
+              Developer IT.
+            </p>
           </section>
 
           {/* DREAPTA – grid alimente */}
